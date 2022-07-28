@@ -20,7 +20,7 @@ int main()
     int a;
     printf("please enter a number:");
     scanf("%d",&a);
-    prime(a,a-1);
+    prime(a,a-1); //or i can write (a,a/2)....cause biggest number can  divide the numbers  half of the number
     //dont put (a,a) ..always be not prime
     return 0;
 }
