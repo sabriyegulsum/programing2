@@ -24,6 +24,5 @@ int main()
         case 2:printf("%d",x*y/(commonDivision(x,y,a)));
             break;
     }
-    printf("send githup");
     return 0;
 }
