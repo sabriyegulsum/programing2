@@ -1,9 +1,9 @@
 #include<stdio.h>
-int number(long int x)
+int number( int x)
 {
     int i=0;
-    long int y=x;
-    while(y>0)
+    int y=x;
+    while(y!=0)//>0
     {
         y=y/10;
         i++;
@@ -14,15 +14,15 @@ int number(long int x)
 int main()
 {
     int x=0;
-    long int n=3,k=2,p;
-    for(int a=1;a<=10;a++)
+    int n=3,k=2,p;
+    for(int a=1;a<=1500;a++)
     {   
         p=n;
         //printf("\n%d %ld %ld",a,n,k);
         if(number(p)>number(k))
         {
             x++;
-            printf("\n%d %ld %ld",a,p,k);
+            printf("\n%d %d %d",a,p,k);
         }
             
         p=n;
