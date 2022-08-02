@@ -3,7 +3,7 @@ int number( int x)
 {
     int i=0;
     int y=x;
-    while(y!=0)//>0
+    while(y!=0)
     {
         y=y/10;
         i++;
@@ -13,7 +13,7 @@ int number( int x)
 
 int main()
 {
-    int x=0;
+    int x=0,b=0,c=0,d=0;
     int n=3,k=2,p;
     for(int a=1;a<=1500;a++)
     {   
@@ -22,7 +22,13 @@ int main()
         if(number(p)>number(k))
         {
             x++;
-            printf("\n%d %d %d",a,p,k);
+            if(a<=100)
+                b++;
+            if(a<=500)
+                c++;
+            if(a<=1000)
+                d++;
+            //printf("\n%d %d %d",a,p,k);
         }
             
         p=n;
@@ -30,7 +36,7 @@ int main()
         k=k+p;
        
     }
-    printf("\n\n***\n%d",x);
+    printf("\n\n***\nilk 100 de:%d\nilk 500 de:%d\nilk 1000 de:%d\nilk 1500 de:%d",b,c,d,x);
     
     return 0;
 }
