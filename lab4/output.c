@@ -6,7 +6,8 @@ int main()
     x=4;
     px=&x;
     ppx=&px;
-    printf("%d",f(x,px,ppx));  //pointer işaretlerini koyarak atarsak ne olur
+    printf("%d",f(x,px,ppx));  //pointer işaretlerini koyarak atarsak ne olur normal bir sayı olarak kullanabilirsin ama amaç 
+    //değerlerinde değişiklik yaptığında hafızadaki değerlerini değiştirebilmektir
     printf("\n%d",x);
     return 0;
 }
