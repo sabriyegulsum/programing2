@@ -13,7 +13,7 @@ int  main()
     int n,k;
     scanf("%d",&n);
     k=rec(n);
-    printf("%d",k);
+    printf("sum of digits:%d",k);
 
     return 0;
 }
