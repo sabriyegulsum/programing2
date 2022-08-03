@@ -8,7 +8,7 @@ void f(int x)
 int main()
 {
     int *x,i=10;
-    x=(int *)malloc(sizeof(int )); 
+    x=(int *)malloc(sizeof(int *)); 
     *x=10;
     f(*x); //pointer x olarak atmak demek onu normal her bir sayı gibi göndermektir
     printf("\n%d",*x);
