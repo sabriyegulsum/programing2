@@ -18,7 +18,7 @@ int f(int x,int *px,int **ppx)
     printf("after x=*px * **ppx:%d\n",x);
     *px*=2;
     printf("after *px *=2:%d\n",*px);
-    x*=*px+3;
+    x*= *px +3;
     printf("after x*=*px+3:%d\n",x);
     return (x+*px+**ppx);
 }
