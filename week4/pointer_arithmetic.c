@@ -11,4 +11,4 @@ int main()
     iptr++;
     printf("\ni=%d",iptr);
     return 0;
-}
+} 
