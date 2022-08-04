@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    char  i,*iptr;
+    float i,*iptr;
     iptr=&i;
     printf("sizeof i=%d\n",sizeof(i));
     printf("sizeof iptr=%d",sizeof(iptr));
