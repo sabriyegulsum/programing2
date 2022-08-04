@@ -26,3 +26,4 @@ int main()
     }
     return 0;
 }
+//eğer a yı fonksiyonun içinde atarsan yani parametre olarak göndermezsen her fonk da değişir.
