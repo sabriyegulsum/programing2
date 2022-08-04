@@ -23,3 +23,4 @@ int main()
     getchar();
     return 0;
 }
+//matris haline getiriyor
