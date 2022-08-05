@@ -10,7 +10,7 @@ int main()
         for(j=0;j<3;j++)
         {
             scanf("%c",&m);
-            if(m==0x0A)
+            if(m==0x0A) //enter girildiğinde onu dizinin bir elemanı olarak alıyor
             {
                 j--;
                 continue;
@@ -27,7 +27,7 @@ int main()
     {
         a=*(array+i)%10-1;
         b=*(array+i)/10-1;
-        printf("\n%c\n",matris[b][a]);
+        printf("\n%c",matris[b][a]);
     }
     return 0;
 }
