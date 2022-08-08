@@ -1,26 +1,18 @@
+// pointer la calışma sorusunu çözmeye çalıştım :)
 #include<stdio.h>
 int main()
 {
-    char *matris[][];
+    char *matris,*metin;
     char m;
-    int i,j,n,a,b,array[100];
-    printf("şifreleme matrisini giriniz");
-    for(i=0;i<3;i++)
-    {
-        for(j=0;j<3;j++)
-        {
-            scanf("%c",&m);
-            if(m==0x0A)
-            {
-                j--;
-                continue;
-            }
-            else
-                matris[i][j]=m;
-        }
-    }
+    int i,j,n,a,b,;
+    printf("şifreleme matrisinin boyutlarını giriniz");
+    scanf("%d %d",&i,&j);
+    matris=(char *)malloc((i*j)*sizeof(char));
     printf("kaç harf şifrelendiniz");
     scanf("%d",&n);
+    printf("şifre matrisiniz:");
+    scanf("%s",matris);
+    
     for(i=0;i<n;i++)
         scanf("%d",&array[i]);
     for(i=0;i<n;i++)
