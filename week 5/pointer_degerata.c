@@ -1,5 +1,5 @@
 // senin kocanın evi yok yaa unutma bir pointeri direk
-//bir değere eşitleyemessin hafızada yeri yok ya malloc yada daha
+//bir değere eşitleyemessin hafızada yeri yok ya malloc yaada daha
 //önceden tanımladığın bir değere eşitleyebilirsin
 #include<stdio.h>
 int main()
