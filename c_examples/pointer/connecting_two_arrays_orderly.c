@@ -59,3 +59,5 @@ int main()
         printf(" %d ",*(ptr+i));
     return 0;
 }
+//helal olsun kızım * _ * :))
+
