@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-//anağğ bu nedir yaaa :)) boş bir satıra bir saatimi verdim
+//moralim bozuktur bana dokanmayın :(
 int main()
 {
     char *name,isim[8]="sabriye";
@@ -23,5 +23,6 @@ int main()
         sum-=7;
     }
     printf("%s",name);
+    free(name);
     return 0;
 }
