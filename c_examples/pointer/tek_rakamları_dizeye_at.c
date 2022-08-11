@@ -4,8 +4,8 @@ int main()
 {
     int *t,*c,no,i,j,sayi;
     no=2010213051;
-    c=(int *)malloc(i*sizeof(int));
-    t=(int*)malloc(j*sizeof(int));
+    c=(int *)malloc(sizeof(int));
+    t=(int*)malloc(sizeof(int));
 
     for(i=0,j=0;no!=0;)
     {
@@ -14,12 +14,14 @@ int main()
         {
             *(c+i)=sayi;
             i++;
+            c=realloc(c,(i+1)*sizeof(int));
         }
             
         else
         {
             *(t+j)=sayi;
             j++;
+            t=realloc(t,(j+1)*sizeof(int));
         }
         no=no/10;
     }
