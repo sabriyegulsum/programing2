@@ -12,8 +12,10 @@ int main()
         sum+=no%10;
         no=no/10;
     }
-    i=7;
+    printf("%d",sum);
+    i=7; 
     name=realloc(name,sum*sizeof(char));
+    sum-=7;
     while(sum>7)
     {
         for(j=0;j<7;j++)
