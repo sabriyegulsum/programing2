@@ -2,15 +2,15 @@
 #include<stdlib.h>
 
 
-int  f(int x)
+void f(long int x)
 {
     
-    int i,a=1;
+   long int i,a=1;
     for(i=2;i<=x/2;i++)
     {
         if(x%i==0)
         {
-            printf("\n\n\n****this number panddigital but not prime %d",x);
+            //printf("\n\n\n****this number panddigital but not prime %d",x);
             a=0;
             break;
         }
@@ -18,27 +18,24 @@ int  f(int x)
     }
     if(a==1)
     {
-        printf("\n\n****this number pandigital and is also prime %d:))",x);
-        return 1;
+        printf("\n\n****this number the biggest pandigital and is also prime %ld:))",x);
     }
         
-    return 0;
     
 }
 int main()
 {
-    int a=1,*array,i,sayi,temp,n=0,j=0,temp2,b;
+    int a=1,*array,i,n=0,j=0,b;
+    long int temp,temp2,sayi=987654321;
     int m,k;
-    //scanf("%d",&sayi);
-    sayi=9876;
-    //the biggest pandigital number
+    
 
     temp2=sayi;
 
     while(1)
     {
-        
-    array=(int *)malloc(sizeof(int));
+        sayi=temp2;
+        array=(int *)malloc(sizeof(int));
     //for(i=0;;i++)
     //{
         temp=sayi;
@@ -55,6 +52,8 @@ int main()
             {
                 
                 *(array+j)=sayi;
+                //printf("%d",array[j]);
+                //diziyi başarılı bir şekilde allıyor orada sorun yok
                 array=realloc(array,(j+2)*sizeof(int));
                 j++;
             
@@ -66,42 +65,42 @@ int main()
             }
             temp=temp/10;
             
-        }ß
+        }
         
         //printf("\n***%d",array[0]);
         //arrayi düzgün alıyoe ama çıkamıyor for 
-        for(k=0;k<n;k++)
+        if(a!=0)
         {
-            for(m=0;m<n;m++)
+            for(k=0;k<n;k++)
             {
-                if(k==m)
-                    continue;
-                if(array[k]==array[m])
-                {
-                    a=0;
-                    break;
-                }
+                for(m=0;m<n;m++)
+                { 
+                    a=1;
+                    if(k==m)
+                        continue;
+                    if(array[k]==array[m])
+                    {
+                        printf("array k=%d ",array[k]);
+                        printf("array m=%d",array[m]);
+                        a=0;
+                        printf("\n--->>sayınızda aynı harfler var  :(");
+                        break;
+                    }
                     
+                }
+               
             }
-            if(a==0)
-                break;
         }
-        
-        
-    //}
-    //printf("\na=%d",a);
         if(a==1)
         {
-            b=f(temp2);
-                if(b==1)
-                    break;
-        }  
-        if(b==1)
+            f(temp2);
             break;
+        }  
         else
         {
             temp2--;
             free(array);
+            
         }
 
     }
