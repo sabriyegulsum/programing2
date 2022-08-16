@@ -39,5 +39,4 @@ int main()
         printf("%d ",*(pp+i));
     
     return 0;
-
 }
