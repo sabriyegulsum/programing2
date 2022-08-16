@@ -2,8 +2,8 @@
 #include<stdio.h>
 int sum(int x[],int y)
 {
-    if(y==1)
-        return x[0];
+    if(y==0)
+        return x[y];
     else
         return x[y-1]+sum(x,y-1);
 
