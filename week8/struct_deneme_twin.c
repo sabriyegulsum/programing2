@@ -1,3 +1,4 @@
+//  belive
 #include<stdio.h>
 int main()
 {
@@ -5,7 +6,7 @@ int main()
         int day;
         int month;
         int year;
-    }she,her_twin;
+    }she,her_twin;   // bu ikisini x ve y değişkenkenleri gibi düşün
 
     printf("enter she birthday day month year");
     scanf("%d %d %d",&she.day,&she.month,&she.year);
