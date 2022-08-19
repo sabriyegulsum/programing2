@@ -5,13 +5,13 @@ typedef enum month_list months;
 void writeMonth_name (months);//months burada int alıcak demek gibi
 int main()
 {
-    months thismonth= october;
+    months thismonth= august;
     writeMonth_name (thismonth);
     return 0;
 }
-void writeMonth_name(months nameof_month )
+void writeMonth_name(months thismonth )
 {
-    switch(nameof_month){
+    switch(thismonth){
         case january : printf("January\n");break;
         case february : printf("February\n");break;
         case march : printf("March\n");break;
