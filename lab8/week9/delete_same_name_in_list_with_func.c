@@ -39,7 +39,7 @@ void delete_same(void)
     onceki=p;
     while(p!=NULL)
     {
-        onceki=p;
+        onceki=p;    //burada hata cıkması gerekmiyormu
         q=p;
         while(q!=NULL)
         {
