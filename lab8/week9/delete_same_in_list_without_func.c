@@ -6,8 +6,8 @@ struct list{
 };
 typedef struct list person;
 person *head;
-int same(person *,person *);
-void delete_same_list(void);
+int same(person *,person *);  //isimler aynımı
+void delete_same_list(void);  //aynı ise sil
 void write_list(void);
 void create_list(void)
 {
