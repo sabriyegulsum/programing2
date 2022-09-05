@@ -1,6 +1,7 @@
+
 #include <stdio.h>
 #include<stdlib.h>
-struct node{  //structımı globalda oluştururum fonksiyonlarda kullanabilsin :)
+struct node{  //structımı globalda oluştururum fonksiyonlarda kullanabilsin 
     char name[40];
     int no;
     struct node *next;   //p->next dediğim bu yani structin içindeki pointeri bağlamak için kullanırım
@@ -26,10 +27,8 @@ node * createList ()
             p=p->next;
         }
         printf("Please enter %d.student name:",(k+1));
-        scanf("%s",p->name);   //bunları konuşmayalım artık gülsüm string X & X
-        printf("Please printf %d.student no:",(k+1));
+        scanf("%s",p->name);   
         scanf("%d",&p->no);
-
     } 
     p->next=NULL;
     return head;
@@ -37,13 +36,13 @@ node * createList ()
 
         int main()
 {
-    node *head;
     head=createList();
     printf("deneme");
-    while(p->next!=NULL)
+    p=head;
+    while(p!=NULL)
     {
         
-        printf("%s\n",p->name);
+        printf("\n%s",p->name);
         printf("%d",p->no);
         p=p->next;
     }
