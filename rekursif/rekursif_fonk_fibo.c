@@ -5,7 +5,8 @@ int fibo(int x)
     {
        return 1;
     }
-    return fibo(x-1)+fibo(x-2);
+    else
+        return fibo(x-1)+fibo(x-2);
 } 
 int main(void)
 {
@@ -14,9 +15,8 @@ int main(void)
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-        printf("number %d= %d\n",i,fibo(i));
+        printf("number %d= %d\n",i,fibo(i-1));
     }
     return 0;
 }
-    
     

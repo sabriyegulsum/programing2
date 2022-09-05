@@ -24,7 +24,7 @@ void create_list(void)
     }
     p->next=NULL;
 }
-node * custlastaddhead(node *head)
+node * cutlastaddhead(node* head)
 {
     node *p,*q;
     p=head->next;
@@ -35,7 +35,7 @@ node * custlastaddhead(node *head)
         p=p->next;
     }
     q->next=NULL;
-    p->next=head;
+    p->next=head->next;
     head=p;
     return head;
 }

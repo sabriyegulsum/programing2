@@ -18,7 +18,6 @@ int fonk(int a[],int x)
 }
 int main()
 {
-    printf("asiye");
     int array[5]={1,34,7,43,21};
     printf("%d",fonk(array,5));
     return 0;

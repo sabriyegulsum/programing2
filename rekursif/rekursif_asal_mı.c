@@ -5,7 +5,6 @@
 //bu yüzden parametre olarak sayıyı ve onun yarısını gönderdim
 int asal_mi(int x,int y)
 {
-  
    if(y==1)
   {
       printf("bu sayı asaldır\n");
@@ -19,7 +18,6 @@ int asal_mi(int x,int y)
   else
     return asal_mi(x,y-1); 
 }
-
 int main(void)
 {
     int a,p;

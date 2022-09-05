@@ -19,6 +19,5 @@ int main(void)
     {
         printf("%d!=%d\n",i,fakt(i));
     }
-    
     return 0;
 }
